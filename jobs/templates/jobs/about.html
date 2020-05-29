@@ -65,7 +65,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-itm nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-itm nav-link active" href="{% url 'about' %}">About</a>
                     <a class="nav-item nav-link " href="http://github.com/robotvilla">GitHub</a>
                     <a class="nav-item nav-link" href="{% static 'roberto_villazana_resume.pdf' %}">Resume</a>
                     <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
@@ -89,25 +89,6 @@
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
-            <div class="container">
-
-                <div class="row">
-
-                    {% for job in jobs.all %}
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="{{ job.image.url }}" />
-                            <div class="card-body">
-                                <p class="card-text">{{ job.summary }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
 
     </main>
 
