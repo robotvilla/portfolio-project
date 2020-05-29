@@ -58,7 +58,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Roberto Villazana</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Roberto Villazana</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -78,14 +78,20 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 id="intro">Hi, my name is Robert Villazana.</h1>
-                <p class="lead text-muted" id="smallbio">
-                    I'm a software engineer based in Fort Worth, TX specializing in devopoing and building backend websites and applications.
-                </p>
-                <p>
-                    <a href="mailto:r.villazana@yahoo.com" class="btn btn-primary my-2">Email Me</a>
-                </p>
-                <img src="{% static 'gohan.jpeg' %}" />
+                <div class="row">
+                    <div class="col-xs-4 col-md-4">
+                        <img src="{% static 'gohan.jpeg' %}" />
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <div><h1 id="intro">Hi, my name is Robert Villazana.</h1>
+                        <p class="lead text-muted" id="smallbio">
+                            Hey, my name is Roberto Villazana, but I go by Robert. I like to consider myself a backend developer. I have experience with Java, Spring/Spring Boot and DB2 database. Although, lately, I've been learning and focusing more with Python and Django. I like Python for its ease in automation. My interest in automating tasks lead me to backend python development.
+                        </p>
+                        <p>
+                            <a href="mailto:r.villazana@yahoo.com" class="btn btn-primary my-2">Email Me</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
