@@ -12,6 +12,12 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'custom.css' %}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -41,8 +47,6 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
-
-            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono&display=swap');
 
             #intro {
                 font-family: 'Playfair Display', serif;
@@ -85,7 +89,7 @@
                 <p>
                     <a href="mailto:r.villazana@yahoo.com" class="btn btn-primary my-2">Email Me</a>
                 </p>
-                <img src="{% static 'gohan.jpeg' %}" />
+                <img src="{% static 'robertv.jpg' %}" class="img-thumbnail profile-img"/>
             </div>
         </section>
 
